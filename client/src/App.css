@@ -1,0 +1,575 @@
+body {
+    place-self: center;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    width: 70%;
+    animation: 2s loadPage forwards;
+    font-weight: bold;
+}
+
+
+@keyframes loadPage {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#legal {
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    bottom: 0%;
+    width: 70%;
+    background-color: rgb(231, 169, 75);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*homepage*/
+#homePage {
+    text-align: center;
+}
+
+.homeElements h2 {
+    font-weight: normal;
+}
+
+#horizontalAd {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+#horizontalAd img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+#popular {
+    text-align: center;
+    background-color: rgb(231, 169, 75);
+    border-radius: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+}
+
+.popularProduct {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 20%;
+    padding: 20px;
+    text-decoration: none;
+    background-color: hsl(194, 93%, 35%);
+    color: white;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#verticalAds {
+    display: flex;
+    max-width: fit-content;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+#verticalAds img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+#popularPrice{
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.popularProduct:hover #popularPrice{
+    color: black;
+}
+
+.popularProduct:hover{
+    background-color: rgb(231, 169, 75);
+    color: black;
+    box-shadow: 5px 10px 20px 10px;
+    text-shadow: none;
+}
+
+/*navbar and title style*/
+
+#cartAndUsername {
+    float: right;
+    padding-right: 20px;
+
+}
+
+#logo {
+    display: flex;
+    background-color: white;
+    font-weight: bold;
+    font-size: 35px;
+    height: 90px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    color: rgb(231, 169, 75);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    z-index: 2;
+    position: relative;
+    width: max-content
+}
+
+#logo h1 {
+    opacity: 0;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+}
+
+#logo:hover h1 {
+    animation-name: logoAnimIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#logo:not(hover) h1 {
+    animation-name: logoAnimout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes logoAnimIn {
+    0% {
+        opacity: 0%;
+        left: -5%;
+
+    }
+
+    100% {
+        opacity: 100%;
+        left: 0%;
+    }
+}
+
+@keyframes logoAnimout {
+    0% {
+        opacity: 100%;
+        left: 0%;
+
+    }
+
+    100% {
+        opacity: 0%;
+        left: -5%;
+    }
+}
+
+#titleLink {
+    text-decoration: none;
+}
+
+.navBtn {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.navBtn:hover {
+    background-color: hsl(0, 98%, 22%);
+    padding-top: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white
+}
+
+#navbar {
+    background-color: hsl(27, 92%, 38%);
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+    justify-content: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+
+/*style for customers page and profile*/
+
+#username {
+    font-size: 20px;
+}
+
+.customer {
+    border: 2px solid black;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#status {
+    display: flex;
+    justify-content: right;
+    float: right;
+}
+
+#userInfo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(231, 169, 75);
+}
+
+#userName {
+    padding-left: 40px;
+}
+
+#userInfo img {
+    border: 5px solid hsl(194, 93%, 35%);
+    border-radius: 20px;
+    width: 250px;
+}
+
+#userLogo {
+    width: 150px;
+    padding-right: 20px;
+}
+
+
+/*misc. items*/
+#loading {
+    display: flex;
+    font-weight: bold;
+    padding-left: 35%;
+    font-size: 100px;
+}
+
+.hidden {
+    visibility: hidden;
+    transition: .5s;
+}
+
+
+/*login/logut*/
+#loginPage {
+    font-size: 30px;
+    border: 5px solid rgb(231, 169, 75);
+    border-radius: 20px;
+    font-weight: bold;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginPage input {
+    font-size: 20px;
+    height: 30px;
+    font-weight: bold;
+}
+
+#loginPage h1 {
+    color: rgb(231, 169, 75);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#loginBtn {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(231, 169, 75);
+    color: black;
+}
+
+#loginBtn:hover {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: hsl(39, 99%, 43%);
+    color: black
+}
+
+#logOut {
+    font-size: 20px;
+    border: none;
+    margin: 20px;
+    float: left;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    transition: .5s;
+}
+
+#logOut:hover {
+    background-color: hsl(41, 53%, 55%);
+    cursor: pointer;
+}
+
+/*shopping cart*/
+
+@keyframes cartIn {
+    0% {
+        right: -1000px;
+        top: 0px;
+    }
+
+    100% {
+        right: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes cartOut {
+    0% {
+        right: 0px;
+        top: 0px;
+    }
+
+    100% {
+        right: -1500px;
+        top: 0px;
+    }
+}
+
+.cartIn {
+    animation-name: cartIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.cartOut {
+    animation-name: cartOut;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+#cart {
+    position: fixed;
+    color: rgb(0, 0, 0);
+    top: 0px;
+    border-left: 5px solid rgb(8, 8, 8);
+    background-color: rgb(255, 255, 255);
+    right: -1500px;
+    width: 40%;
+    height: 100%;
+    overflow: scroll;
+}
+
+#cart button {
+    float: right;
+    font-size: 30px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#cart button:hover {
+    background-color: hsl(0, 0%, 80%);
+    cursor: pointer;
+}
+
+
+#cartTxt {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(231, 169, 75);
+    border-bottom: 5px solid black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#cartBtn {
+    border: none;
+    background-color: hsl(0, 98%, 25%);
+    padding: 5px;
+}
+
+#cartBtn:hover {
+    background-color: hsl(0, 98%, 22%);
+}
+
+#items {
+    font-size: 20px;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+}
+
+#items li {
+    width: 80%;
+    background-color: hsl(0, 0%, 100%);
+    transition: .5s;
+}
+
+#items li:hover {
+        background-color: hsl(0, 0%, 85%);
+}
+
+#items img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+}
+
+#itemsInCart {
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 2px hsla(0, 0%, 0%, 0.205)
+}
+
+#cartPrice {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#total{
+    float: left;
+}
+
+
+
+/*style for estore*/
+
+.product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    transition: .4s;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.product:hover {
+    margin-top: 10px;
+    background-color: rgb(231, 169, 75);
+    color: black;
+    box-shadow: 5px 10px 20px 10px;
+    text-shadow: none;
+}
+
+#productName {
+    font-size: 20px;
+    width: inherit;
+}
+
+#price {
+    margin: 0px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.product button {
+    width: 50px;
+}
+
+#eStoreImages {
+    border-radius: 20px;
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+}
+
+#productList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*style for product infopage */
+
+#productInfo {
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+    border: 2px solid rgb(233, 185, 81);
+
+}
+
+#productInfo h2 {
+    font-weight: normal;
+    max-width: 1000px;
+}
+
+#prodPrice {
+    font-size: 30px;
+}
+
+#productInfo img {
+    height: 300px;
+    width: 300px;
+    padding: 40px
+}
+
+#productInfo button {
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: hsl(120, 98%, 46%);
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#productInfo button:hover {
+    background-color: hsl(120, 98%, 36%);
+}
+
+#productInfoText {
+    font-size: 15px;
+}
