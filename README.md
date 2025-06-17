@@ -1,8 +1,9 @@
 A store app which uses "Fakestoreapi.com".
 -
-This is one of my bigger projects, quite proud of this one
--
 Frontend built on JavaScript,React,CSS and HTML
 -
 Backend is the fakestorepi
+-
+An E-store shopping site. You can add items into cart and log in.
+No meant for actual purchases (duh...)
 -
