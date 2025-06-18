@@ -1,12 +1,15 @@
 ![Real logo](client/public/r-high-resolution-logo-transparent.png)
+#Title
+## Real webstore
+
 # How it´s made?
 ## Frontend: JavaScript, React, Html and CSS.
 ## Backend: FakeStoreApi
 
 # Description:
 ## An E-Store website without any integration with a database.
+## This website was a bit of an experience, I wanted to build and E-Store solely with an external API
 
 # What I learned?
 
-## CSS styling. That I like to work with my own databases more than api-s. Fetching and serving data to the client
-# Future Updates:
+## CSS styling. That I like to work with my own databases. Fetching and serving data to the client.
