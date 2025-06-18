@@ -1,5 +1,5 @@
 ![Real logo](client/public/r-high-resolution-logo-transparent.png)
-#Title
+# Title
 ## Real webstore
 
 # How it´s made?
@@ -13,3 +13,5 @@
 # What I learned?
 
 ## CSS styling. That I like to work with my own databases. Fetching and serving data to the client.
+# Contact:
+## LinkedIn: www.linkedin.com/in/roland-piperal-932a4a347
