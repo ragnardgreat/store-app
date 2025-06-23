@@ -1,7 +1,7 @@
 
 import DisplayProducts from "../Components/DisplayProducts";
 
-function Estore(){
+function Estore() {
 
     const styles = {
         "display": "flex",
@@ -9,11 +9,11 @@ function Estore(){
 
 
 
-    return(
+    return (
         <>
-        <div style = {styles} id="estorePage">
-        <DisplayProducts/>
-        </div>
+            <div style={styles} id="estorePage">
+                <DisplayProducts />
+            </div>
 
         </>
     )

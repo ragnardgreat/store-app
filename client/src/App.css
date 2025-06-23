@@ -3,9 +3,10 @@ body {
     padding: 0px;
     margin: 0px;
     align-items: center;
-    width: 70%;
+    width: 100%;
     animation: 2s loadPage forwards;
     font-weight: bold;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -24,7 +25,7 @@ body {
     color: white;
     font-weight: bold;
     bottom: 0%;
-    width: 70%;
+    width: 100%;
     background-color: rgb(231, 169, 75);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-align: center;
@@ -55,10 +56,12 @@ body {
 
 #popular {
     text-align: center;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    width:fit-content;
     background-color: rgb(231, 169, 75);
     border-radius: 10px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: white;
+    color: rgb(121, 73, 10);
 }
 
 .popularProduct {
@@ -68,10 +71,18 @@ body {
     max-width: 20%;
     padding: 20px;
     text-decoration: none;
-    background-color: hsl(194, 93%, 35%);
-    color: white;
+    background-color: hsl(0, 0%, 82%);
+    color: black;
+    box-shadow: -5px 15px 20px hsla(0, 0%, 0%, 0.637);
     border-radius: 20px;
     transition: .5s;
+        border: 2px solid rgb(211, 172, 0);
+}
+.popularProduct:hover{
+    background-color: rgb(231, 169, 75);
+    color: black;
+    box-shadow: -15px 25px 20px hsla(0, 0%, 0%, 0.637);
+    text-shadow: none;
 }
 
 #verticalAds {
@@ -90,7 +101,7 @@ body {
 }
 
 #popularPrice{
-    color: white;
+    color: black;
     font-weight: bold;
     transition: .5s;
 }
@@ -99,12 +110,6 @@ body {
     color: black;
 }
 
-.popularProduct:hover{
-    background-color: rgb(231, 169, 75);
-    color: black;
-    box-shadow: 5px 10px 20px 10px;
-    text-shadow: none;
-}
 
 /*navbar and title style*/
 
@@ -116,7 +121,7 @@ body {
 
 #logo {
     display: flex;
-    background-color: white;
+    background-color: hsl(27, 92%, 38%);
     font-weight: bold;
     font-size: 35px;
     height: 90px;
@@ -128,8 +133,13 @@ body {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     z-index: 2;
     position: relative;
-    width: max-content
+    width: max-content;
 }
+
+#pageTop{
+    background-color: hsl(27, 92%, 38%);
+}
+
 
 #logo h1 {
     opacity: 0;
@@ -202,12 +212,14 @@ body {
 #navbar {
     background-color: hsl(27, 92%, 38%);
     display: flex;
+    position: relative;
+    z-index: 2;
     gap: 10px;
     font-size: 20px;
     color: white;
     justify-content: left;
     padding: 5px;
-    border-radius: 10px;
+    box-shadow: 0px -1px 20px black;
 }
 
 
@@ -473,6 +485,12 @@ body {
 
 /*style for estore*/
 
+
+#estorePage{
+    width: 80%;
+    margin: auto;
+}
+
 .product {
     display: flex;
     flex-direction: column;
@@ -486,13 +504,17 @@ body {
     text-decoration: none;
     color: black;
     padding: 10px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 82%);
+    box-shadow: -5px 15px 20px hsla(0, 0%, 0%, 0.637);
+    border: 2px solid rgb(211, 172, 0);
 }
 
 .product:hover {
     margin-top: 10px;
     background-color: rgb(231, 169, 75);
     color: black;
-    box-shadow: 5px 10px 20px 10px;
+    box-shadow: -15px 25px 20px hsla(0, 0%, 0%, 0.637);
     text-shadow: none;
 }
 
