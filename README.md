@@ -2,19 +2,28 @@
 
 # Real Webstore 
 
-# How it´s made?
-Frontend: JavaScript, React, Html and CSS.
-Backend: FakeStoreApi
+# Built with:
+Frontend: JavaScript, React, HTML and CSS.
 
-# Description:
-I wanted to build a project that used and external API, and I decided to use faksesoreapi to build this project
+Backend: FakeStoreApi, Node.js, exprss
 
-# "Real" store demo video:
+## Features:
+- Fakestoreapi integration
+- Product pages
+- User login
+- Shopping cart
+
+# demo video:
 
 https://github.com/user-attachments/assets/6cb82a7e-2125-44f8-86d3-11795626615b
 
 # What I learned?
 
-CSS and HTML styling, API requests, complicated JavaScript functions/features
+- CSS and HTML styling
+- API requests
+- complicated JavaScript functions/features
+- API integration
+- Express and Node.js usability
+
 # Contact:
 LinkedIn: www.linkedin.com/in/roland-piperal-932a4a347
