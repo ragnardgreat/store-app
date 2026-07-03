@@ -13,7 +13,7 @@ Backend: FakeStoreApi, Node.js, exprss
 - User login
 - Shopping cart
 
-# demo video:
+# Webstore demonstration video:
 
 https://github.com/user-attachments/assets/6cb82a7e-2125-44f8-86d3-11795626615b
 
